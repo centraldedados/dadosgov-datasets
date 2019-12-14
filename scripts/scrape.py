@@ -19,5 +19,5 @@ while next_page:
         break
 
 df = pd.DataFrame(datasets)
-outfile = open('../data/datasets.json', 'w')
-outfile.write(df.to_json(orient='records', force_ascii=False, lines=True))
+outfile = open('../data/datasets-raw.json', 'w')
+outfile.write(df.to_json(orient='records', force_ascii=False))
